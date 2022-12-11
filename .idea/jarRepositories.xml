@@ -16,5 +16,20 @@
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="depick2" />
+      <option name="name" value="User Project Release" />
+      <option name="url" value="http://nexus.deepexi.com/repository/maven-releases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="deepexi-central" />
+      <option name="name" value="public Repository" />
+      <option name="url" value="http://nexus.deepexi.com/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="depick" />
+      <option name="name" value="User Project SNAPSHOTS" />
+      <option name="url" value="http://nexus.deepexi.com/repository/maven-snapshots/" />
+    </remote-repository>
   </component>
 </project>

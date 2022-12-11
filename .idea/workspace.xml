@@ -4,30 +4,60 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72aa9bd5-1606-4674-9018-59e2d452971b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/alldemo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small-spring-step-02/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small-spring-step-02/small-spring-step-02.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/BeansException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/factory/BeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/factory/config/BeanDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/factory/config/SingletonBeanRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/factory/support/AbstractAutowireCapableBeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/factory/support/AbstractBeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/factory/support/BeanDefinitionRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/factory/support/DefaultListableBeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/factory/support/DefaultSingletonBeanRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small-spring-step-02/src/test/java/cn/basion/bean/UserService.java" afterDir="false" />
+    <list default="true" id="72aa9bd5-1606-4674-9018-59e2d452971b" name="Default Changelist" comment="feature:添加代码">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect-demo/src/main/java/cn/basion/Base.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect-demo/src/main/java/cn/basion/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect-demo/src/main/java/cn/basion/Man.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect-demo/src/main/java/cn/basion/ManItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect-demo/src/main/java/cn/basion/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/PropertyValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/PropertyValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/core/io/ClassPathResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/core/io/DefaultResourceLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/core/io/FileSystemResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/core/io/Resource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/core/io/ResourceLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/core/io/UrlResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/config/BeanReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/AbstractBeanDefinitionReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/BeanDefinitionReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/CglibSubclassingInstantiationStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/InstantiationStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/SimpleInstantiationStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/xml/XmlBeanDefinitionReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/util/ClassUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/src/test/java/cn/basion/bean/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/target/classes/cn/basion/beans/BeansException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/target/classes/cn/basion/beans/factory/BeanFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/target/classes/cn/basion/beans/factory/config/BeanDefinition.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/target/classes/cn/basion/beans/factory/config/SingletonBeanRegistry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/target/classes/cn/basion/beans/factory/support/AbstractAutowireCapableBeanFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/target/classes/cn/basion/beans/factory/support/AbstractBeanFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/target/classes/cn/basion/beans/factory/support/BeanDefinitionRegistry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/target/classes/cn/basion/beans/factory/support/DefaultListableBeanFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small-spring/target/classes/cn/basion/beans/factory/support/DefaultSingletonBeanRegistry.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbc-demo/target/classes/cn/basion/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-demo/mybatis-demo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-demo/target/classes/cn/basion/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-demo/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-spring-step-02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-spring-step-02/small-spring-step-02.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/BeansException.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/BeansException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/factory/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/BeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/factory/config/BeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/config/BeanDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/factory/config/SingletonBeanRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/config/SingletonBeanRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/factory/support/AbstractAutowireCapableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/AbstractAutowireCapableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/factory/support/AbstractBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/AbstractBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/factory/support/BeanDefinitionRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/BeanDefinitionRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/factory/support/DefaultListableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/DefaultListableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-spring-step-02/src/main/java/cn/basion/beans/factory/support/DefaultSingletonBeanRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/DefaultSingletonBeanRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small-spring-step-02/src/test/java/cn/basion/bean/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/test/java/cn/basion/bean/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +89,13 @@
   <component name="JRebelWorkspace">
     <option name="jrebelEnabledAutocompile" value="true" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../install/apache-maven-3.5.4" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2I74apo6YCRiDnsxJ4xWb2oIihU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -72,32 +109,19 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../small-spring" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/reflect-demo" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.proportion" value="0.1019368" />
+    <property name="project.structure.side.proportion" value="0.29804373" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RunManager" selected="JUnit.AppTest.test_BeanFactory">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.basion.App" />
-      <module name="mybatis-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.basion.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.basion.Main" />
-      <module name="jdbcdemo" />
+      <module name="reflect-demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.basion.*" />
@@ -108,19 +132,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.test_BeanFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="small-spring-step-02" />
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="small-spring" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.basion.*" />
@@ -129,16 +155,74 @@
       </extension>
       <option name="PACKAGE_NAME" value="cn.basion" />
       <option name="MAIN_CLASS_NAME" value="cn.basion.AppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.test_BeanFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="small-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.basion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="cn.basion" />
+      <option name="MAIN_CLASS_NAME" value="cn.basion.AppTest" />
       <option name="METHOD_NAME" value="test_BeanFactory" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppTest.test_cglib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="small-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.basion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.basion" />
+      <option name="MAIN_CLASS_NAME" value="cn.basion.AppTest" />
+      <option name="METHOD_NAME" value="test_cglib" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.test_newInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="small-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.basion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.basion" />
+      <option name="MAIN_CLASS_NAME" value="cn.basion.AppTest" />
+      <option name="METHOD_NAME" value="test_newInstance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.AppTest.test_BeanFactory" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.AppTest" />
+      <item itemvalue="JUnit.AppTest.test_cglib" />
+      <item itemvalue="JUnit.AppTest.test_newInstance" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AppTest.test_BeanFactory" />
-        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.AppTest.test_cglib" />
+        <item itemvalue="JUnit.AppTest.test_newInstance" />
+        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -164,8 +248,17 @@
       <workItem from="1670202355249" duration="1771000" />
       <workItem from="1670288020324" duration="2827000" />
       <workItem from="1670460817005" duration="2759000" />
-      <workItem from="1670547222553" duration="1349000" />
+      <workItem from="1670547222553" duration="1425000" />
+      <workItem from="1670728227393" duration="16897000" />
     </task>
+    <task id="LOCAL-00001" summary="feature:添加代码">
+      <created>1670549517228</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670549517228</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,19 +276,13 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feature:添加代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature:添加代码" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jdbc-demo/src/main/java/cn/basion/Main.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jdbc-demo/src/main/java/cn/basion/Main.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/sql/DriverManager.java</url>
           <line>682</line>
@@ -215,6 +302,16 @@
           <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java</url>
           <line>1306</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/small-spring/src/test/java/cn/basion/AppTest.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/small-spring/src/test/java/cn/basion/bean/UserService.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

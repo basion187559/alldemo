@@ -10,12 +10,18 @@
   <modules>
     <module>jdbc-demo</module>
     <module>mybatis-demo</module>
-      <module>small-spring-step-02</module>
+    <module>small-spring</module>
+
+    <module>reflect-demo</module>
   </modules>
 
   <name>all-demo</name>
   <packaging>pom</packaging>
 
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
 
   <dependencies>
     <dependency>
@@ -37,12 +43,6 @@
       <version>db2jcc4</version>
     </dependency>
 
-    <!--oracle-->
-    <dependency>
-      <groupId>com.oracle</groupId>
-      <artifactId>ojdbc6</artifactId>
-      <version>12.1.0.1-atlassian-hosted</version>
-    </dependency>
 
     <dependency>
       <groupId>mysql</groupId>
@@ -55,7 +55,36 @@
         </exclusion>
       </exclusions>
     </dependency>
+    <dependency>
+      <groupId>cglib</groupId>
+      <artifactId>cglib</artifactId>
+      <version>3.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+      <version>5.5.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.24</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
