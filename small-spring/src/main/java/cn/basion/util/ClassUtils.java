@@ -1,4 +1,4 @@
-package cn.basion.beans.util;
+package cn.basion.util;
 
 /**
  * @description:

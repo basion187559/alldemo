@@ -1,4 +1,4 @@
-package cn.basion.beans.core.io;
+package cn.basion.io;
 
 import cn.hutool.core.lang.Assert;
 import java.io.IOException;

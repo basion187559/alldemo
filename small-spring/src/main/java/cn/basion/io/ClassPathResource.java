@@ -1,11 +1,10 @@
-package cn.basion.beans.core.io;
+package cn.basion.io;
 
-import cn.basion.beans.util.ClassUtils;
+import cn.basion.util.ClassUtils;
 import cn.hutool.core.lang.Assert;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ServiceLoader;
 
 /**
  * @description:

@@ -11,8 +11,9 @@
     <module>jdbc-demo</module>
     <module>mybatis-demo</module>
     <module>small-spring</module>
-
     <module>reflect-demo</module>
+      <module>etcd-demo</module>
+      <module>netty-demo</module>
   </modules>
 
   <name>all-demo</name>
@@ -70,6 +71,11 @@
       <artifactId>lombok</artifactId>
       <version>1.18.24</version>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+        <groupId>io.etcd</groupId>
+        <artifactId>jetcd-core</artifactId>
+        <version>0.7.5</version>
     </dependency>
   </dependencies>
 

@@ -3,6 +3,7 @@ package cn.basion.beans.factory.support;
 import cn.basion.beans.BeansException;
 import cn.basion.beans.PropertyValue;
 import cn.basion.beans.PropertyValues;
+import cn.basion.beans.factory.config.AutowireCapableBeanFactory;
 import cn.basion.beans.factory.config.BeanDefinition;
 import cn.basion.beans.factory.config.BeanReference;
 import cn.hutool.core.bean.BeanUtil;
@@ -13,7 +14,7 @@ import java.lang.reflect.Constructor;
  * @author: wupeineng
  * @create: 2022-12-08 9:14
  */
-public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFactory{
+public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFactory implements AutowireCapableBeanFactory {
 
     private InstantiationStrategy instantiationStrategy = new CglibSubclassingInstantiationStrategy();
 
@@ -71,4 +72,14 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
     public void setInstantiationStrategy(InstantiationStrategy instantiationStrategy) {
         this.instantiationStrategy = instantiationStrategy;
     }
+    @Override
+    public Object applyBeanPostProcessorsBeforeInitialization(Object exitBean, String beanName) throws BeansException {
+        return null;
+    }
+    @Override
+    public Object applyBeanPostProcessorsAfterInitialization(Object exitBean, String beanName) throws BeansException {
+        return null;
+    }
+
+
 }

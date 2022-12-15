@@ -1,4 +1,4 @@
-package cn.basion.beans.core.io;
+package cn.basion.io;
 
 import java.io.File;
 import java.io.FileInputStream;

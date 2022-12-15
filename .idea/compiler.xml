@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mybatis-demo" />
         <module name="reflect-demo" />
         <module name="jdbc-demo" />
+        <module name="netty-demo" />
         <module name="jdbcdemo" />
         <module name="small-spring" />
+        <module name="mybatis-demo" />
+        <module name="etcd-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

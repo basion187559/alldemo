@@ -1,8 +1,8 @@
 package cn.basion.beans.factory.support;
 
 import cn.basion.beans.BeansException;
-import cn.basion.beans.core.io.Resource;
-import cn.basion.beans.core.io.ResourceLoader;
+import cn.basion.io.Resource;
+import cn.basion.io.ResourceLoader;
 
 /**
  * @description:
