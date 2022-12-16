@@ -2,17 +2,19 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="reflect-demo" />
-        <module name="jdbc-demo" />
         <module name="netty-demo" />
-        <module name="jdbcdemo" />
+        <module name="flatBufferdemo" />
         <module name="small-spring" />
         <module name="mybatis-demo" />
+        <module name="jdbc-demo" />
+        <module name="reflect-demo" />
         <module name="etcd-demo" />
+        <module name="jdbcdemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
