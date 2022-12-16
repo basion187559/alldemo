@@ -2,8 +2,8 @@ package cn.basion.beans.factory.xml;
 
 import cn.basion.beans.BeansException;
 import cn.basion.beans.PropertyValue;
-import cn.basion.io.Resource;
-import cn.basion.io.ResourceLoader;
+import cn.basion.core.io.ResourceLoader;
+import cn.basion.core.io.Resource;
 import cn.basion.beans.factory.config.BeanDefinition;
 import cn.basion.beans.factory.config.BeanReference;
 import cn.basion.beans.factory.support.AbstractBeanDefinitionReader;

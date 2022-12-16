@@ -5,9 +5,8 @@ import cn.basion.beans.factory.ConfigurableListableBeanFactory;
 import cn.basion.beans.factory.config.BeanFactoryPostProcessor;
 import cn.basion.beans.factory.config.BeanPostProcessor;
 import cn.basion.context.ConfigurableApplicationContext;
-import cn.basion.io.DefaultResourceLoader;
+import cn.basion.core.io.DefaultResourceLoader;
 import java.util.Map;
-import javax.swing.table.TableCellEditor;
 
 /**
  * @description:

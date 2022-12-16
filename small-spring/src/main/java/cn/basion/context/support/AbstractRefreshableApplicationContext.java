@@ -24,4 +24,10 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
         return new DefaultListableBeanFactory();
     }
 
+    protected abstract void loadBeanDefinitions(DefaultListableBeanFactory beanFactory);
+
+    @Override
+    public DefaultListableBeanFactory getBeanFactory() {
+        return beanFactory;
+    }
 }
