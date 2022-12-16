@@ -1,0 +1,8 @@
+namespace cn.basion.bean;
+
+table Person {
+    name:string;
+    age:int;
+}
+
+root_type Person;
