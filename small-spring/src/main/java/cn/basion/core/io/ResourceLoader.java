@@ -1,4 +1,4 @@
-package cn.basion.io;
+package cn.basion.core.io;
 
 /**
  * @description:

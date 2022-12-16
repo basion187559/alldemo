@@ -1,7 +1,7 @@
 package cn.basion.beans.factory.support;
 
-import cn.basion.io.DefaultResourceLoader;
-import cn.basion.io.ResourceLoader;
+import cn.basion.core.io.DefaultResourceLoader;
+import cn.basion.core.io.ResourceLoader;
 
 /**
  * @description:
