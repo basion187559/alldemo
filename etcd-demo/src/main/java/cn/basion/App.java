@@ -32,7 +32,6 @@ public class App
         CompletableFuture<GetResponse> futureResponse = sourceClient.get(key, option);
         GetResponse response = futureResponse.get();
 
-
         KV targetClient = Client.builder().endpoints(targetUrl).build().getKVClient();
         for (KeyValue kv : response.getKvs()) {
             System.out.println(kv.getKey().toString(utf8)+":"+kv.getValue().toString(utf8));
