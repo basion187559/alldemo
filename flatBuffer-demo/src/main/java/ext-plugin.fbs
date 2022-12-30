@@ -1,0 +1,146 @@
+namespace A6;
+
+table TextEntry {
+    name:string;
+    value:string;
+}
+
+table DataEntry {
+    name:string;
+    value:[ubyte];
+}
+
+enum Method:ubyte {
+    GET,
+    HEAD,
+    POST,
+    PUT,
+    DELETE,
+    MKCOL,
+    COPY,
+    MOVE,
+    OPTIONS,
+    PROPFIND,
+    PROPPATCH,
+    LOCK,
+    UNLOCK,
+    PATCH,
+    TRACE,
+}
+
+namespace A6.Err;
+
+enum Code:ubyte {
+    BAD_REQUEST,
+    SERVICE_UNAVAILABLE,
+    CONF_TOKEN_NOT_FOUND,
+}
+
+table Resp {
+    code:Code;
+}
+
+namespace A6.PrepareConf;
+
+table Req {
+    // The configuration for each plugins run in the runner
+    // The name is the plugin name while the value is the JSON encoded plugin configuration,
+    // like:
+    // {name: "echo", value: '{"body":"blah","headers":[]}'}
+    // The order of plugin execution is the same as the order of plugin name in this array.
+    conf:[TextEntry];
+    // the idempotent key
+    key:string;
+}
+
+table Resp {
+    conf_token:uint32;
+}
+
+namespace A6.HTTPReqCall;
+
+table Req {
+    // The id is for debug. It will be recycled when the number is exhausted
+    id:uint32;
+
+    src_ip:[ubyte];
+
+    method:Method;
+
+    path:string;
+    args:[TextEntry];
+    headers:[TextEntry];
+
+    conf_token:uint32;
+}
+
+table Stop {
+    status:uint16;
+    headers:[TextEntry];
+    body:[ubyte];
+}
+table Rewrite {
+    path:string;
+    // To delete a request header, use a TextEntry without Value
+    // To change the upstream host, use a TextEntry with Name equals to `host`
+    headers:[TextEntry];
+    // To delete an argument, use a TextEntry without Value
+    args:[TextEntry];
+    // To change the upstream response header
+    resp_headers:[TextEntry];
+}
+
+union Action {
+    Stop,
+    Rewrite,
+}
+
+table Resp {
+    id:uint32;
+    action:Action;
+}
+
+namespace A6.ExtraInfo;
+
+table Var {
+    name:string;
+}
+
+table ReqBody {
+}
+
+table RespBody {
+}
+
+union Info {
+    // Get the `ngx.var.name`
+    Var,
+    // Get the request body
+    ReqBody,
+    // Get the response body
+    RespBody,
+}
+
+table Req {
+    info:Info;
+}
+
+table Resp {
+    result:[ubyte];
+}
+
+namespace A6.HTTPRespCall;
+
+table Req {
+    id:uint32;
+    status:uint16;
+    headers:[TextEntry];
+    conf_token:uint32;
+}
+
+table Resp {
+    id:uint32;
+    status:uint16;
+    headers:[TextEntry];
+    body:[ubyte];
+}
