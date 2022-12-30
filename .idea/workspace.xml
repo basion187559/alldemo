@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72aa9bd5-1606-4674-9018-59e2d452971b" name="Default Changelist" comment="feature:添加代码">
-      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/context/support/AbstractXmlApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flatBuffer-demo/src/main/java/ext-plugin.fbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/AbstractBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/AbstractBeanDefinitionReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/BeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/BeanDefinitionReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/xml/XmlBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/xml/XmlBeanDefinitionReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/context/support/AbstractApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/context/support/AbstractApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/context/support/AbstractRefreshableApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/context/support/AbstractRefreshableApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/io/ClassPathResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/core/io/ClassPathResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/io/DefaultResourceLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/core/io/DefaultResourceLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/io/FileSystemResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/core/io/FileSystemResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/io/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/core/io/Resource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/io/ResourceLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/core/io/ResourceLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/io/UrlResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/core/io/UrlResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,19 +60,23 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../netty-learning-example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.1019368" />
     <property name="project.structure.side.proportion" value="0.29804373" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\alldemo" />
       <recent name="D:\workspace\alldemo\small-spring\src\test\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\alldemo\flatBuffer-demo\src\main\java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="cn.basion" />
@@ -205,7 +200,8 @@
       <workItem from="1670980537710" duration="3697000" />
       <workItem from="1671011248797" duration="9402000" />
       <workItem from="1671067539664" duration="11765000" />
-      <workItem from="1671154270038" duration="697000" />
+      <workItem from="1671154270038" duration="1006000" />
+      <workItem from="1671156654601" duration="2114000" />
     </task>
     <task id="LOCAL-00001" summary="feature:添加代码">
       <created>1670549517228</created>
@@ -228,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671101440141</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feature:添加代码">
+      <created>1671156335840</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671156335840</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
