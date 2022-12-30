@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72aa9bd5-1606-4674-9018-59e2d452971b" name="Default Changelist" comment="feature:添加代码">
-      <change afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/context/support/AbstractXmlApplicationContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/AbstractBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/AbstractBeanDefinitionReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/BeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/support/BeanDefinitionReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/xml/XmlBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/beans/factory/xml/XmlBeanDefinitionReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/context/support/AbstractApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/context/support/AbstractApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/context/support/AbstractRefreshableApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/context/support/AbstractRefreshableApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/io/ClassPathResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/core/io/ClassPathResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/io/DefaultResourceLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/core/io/DefaultResourceLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/io/FileSystemResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/core/io/FileSystemResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/io/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/core/io/Resource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/io/ResourceLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/core/io/ResourceLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/io/UrlResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/small-spring/src/main/java/cn/basion/core/io/UrlResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,17 +118,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
