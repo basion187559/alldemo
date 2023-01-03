@@ -10,6 +10,7 @@ import io.etcd.jetcd.kv.GetResponse;
 import io.etcd.jetcd.options.GetOption;
 
 import java.io.File;
+import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,15 +28,14 @@ import java.util.concurrent.ExecutionException;
  */
 public class Main {
 
-    public static final File file  = new File("/Users/basion/workspace/alldemo/etcd-demo/src/main/resources/value.txt");
+    public static final File file  = new File("D:\\workspace\\alldemo\\alldemo\\etcd-demo\\src\\main\\resources\\value.txt");
     public static final String seperator="___";
     public  static  Charset utf8 = Charset.forName("utf-8");
-    public  static String sourceUrl ="http://10.0.0.10:31889";
+    public  static String sourceUrl ="http://10.0.0.10:32271";
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
-        saveValueToFile();
+       // saveValueToFile();
         copyValueFromFile();
-
     }
 
 
@@ -54,26 +54,38 @@ public class Main {
             for (KeyValue kv : response.getKvs()) {
                 map.put(kv.getKey().toString(utf8),kv.getValue().toString(utf8));
             }
-            FileUtil.writeMap(map,file,utf8,seperator,false);
+            FileUtil.writeMap(map,file,utf8,seperator,true);
+            sourceClient.close();
     }
 
 
     public static void copyValueFromFile() throws ExecutionException, InterruptedException {
-
-
-        KV targetClient = Client.builder().endpoints(sourceUrl).build().getKVClient();
-        ByteSequence key = ByteSequence.from(ByteString.copyFrom("name", utf8));
-        ByteSequence value = ByteSequence.from(ByteString.copyFrom("basion", utf8));
-        targetClient.put(key,value);
-
-//        List<String> list = new ArrayList<>();
-//        FileUtil.readLines(file,utf8,list);
-//        list.forEach(data->{
-//            String[] datas = data.split(seperator);
+        Client client = Client.builder().target(sourceUrl).build();
+        KV kvClient = client.getKVClient();
+        List<String> contents = FileUtil.readLines(file, utf8);
+        for (String content : contents){
+            String[] datas = content.split(seperator);
+            ByteSequence key = ByteSequence.from(datas[0].getBytes());
+            ByteSequence value = ByteSequence.from(datas[1].getBytes());
+            // put the key-value
+            kvClient.put(key, value).get();
+        }
+//        ByteSequence key = ByteSequence.from("test_key".getBytes());
+//        ByteSequence value = ByteSequence.from("test_value".getBytes());
+//        KV targetClient = Client.builder().endpoints(sourceUrl).build().getKVClient();
+//        // put the key-value
+//        kvClient.put(key, value).get();
 //
-//            targetClient.put(ByteSequence.from(datas[0],utf8), ByteSequence.from(datas[1],utf8));
-//        });
-        targetClient.close();
+//        CompletableFuture<GetResponse> getFuture = kvClient.get(key);
+//        GetResponse response = getFuture.get();
+////        List<String> list = new ArrayList<>();
+////        FileUtil.readLines(file,utf8,list);
+////        list.forEach(data->{
+////            String[] datas = data.split(seperator);
+////
+////            targetClient.put(ByteSequence.from(datas[0],utf8), ByteSequence.from(datas[1],utf8));
+////        });
+        kvClient.close();
     }
 
 

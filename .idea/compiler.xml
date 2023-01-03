@@ -13,6 +13,7 @@
         <module name="netty-demo" />
         <module name="jdbcdemo" />
         <module name="small-spring" />
+        <module name="http-demo" />
         <module name="mybatis-demo" />
         <module name="flatBuffer-demo" />
         <module name="etcd-demo" />

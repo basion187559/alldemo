@@ -1,1 +1,0 @@
-/apisix/upstreams/440973458445173714___{"id":"440973458445173714","create_time":1672370263,"update_time":1672370263,"nodes":{"baidu.com":1},"timeout":{"connect":6,"send":6,"read":6},"type":"roundrobin","scheme":"http","pass_host":"pass","name":"baidu","keepalive_pool":{"idle_timeout":60,"requests":1000,"size":320}}
