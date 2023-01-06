@@ -28,7 +28,7 @@ import java.util.concurrent.ExecutionException;
  */
 public class Main {
 
-    public static final File file  = new File("D:\\workspace\\alldemo\\alldemo\\etcd-demo\\src\\main\\resources\\value.txt");
+    public static final File file  = new File("D:\\workspace\\alldemo\\etcd-demo\\src\\main\\resources\\value.txt");
     public static final String seperator="___";
     public  static  Charset utf8 = Charset.forName("utf-8");
     public  static String sourceUrl ="http://10.0.0.10:32271";
