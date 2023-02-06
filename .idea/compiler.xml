@@ -8,16 +8,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="netty-demo" />
+        <module name="etcd-demo" />
         <module name="flatBufferdemo" />
+        <module name="spring-framework-demo" />
         <module name="http-demo" />
         <module name="flatBuffer-demo" />
         <module name="httpdemo" />
-        <module name="small-spring" />
-        <module name="mybatis-demo" />
-        <module name="jdbc-demo" />
-        <module name="reflect-demo" />
-        <module name="etcd-demo" />
         <module name="jdbcdemo" />
+        <module name="mybatis-demo" />
+        <module name="small-spring" />
+        <module name="reflect-demo" />
+        <module name="jdbc-demo" />
+        <module name="logdemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
