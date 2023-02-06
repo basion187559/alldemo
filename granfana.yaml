@@ -1,0 +1,158 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: grafana
+  name: grafana
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: grafana
+  template:
+    metadata:
+      labels:
+        app: grafana
+    spec:
+      containers:
+        - env:
+            - name: GF_SECURITY_ADMIN_USER
+              value: admin
+            - name: GF_SECURITY_ADMIN_PASSWORD
+              value: abcd1234
+          image: grafana/grafana:9.2.2
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            failureThreshold: 10
+            httpGet:
+              path: /api/health
+              port: 3000
+              scheme: HTTP
+            initialDelaySeconds: 60
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 30
+          name: grafana
+          ports:
+            - containerPort: 80
+              name: service
+              protocol: TCP
+            - containerPort: 3000
+              name: grafana
+              protocol: TCP
+          readinessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /api/health
+              port: 3000
+              scheme: HTTP
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          resources:
+            limits:
+              cpu: '0.5'
+              memory: 500Mi
+            requests:
+              cpu: 50m
+              memory: 50Mi
+          volumeMounts:
+            - mountPath: /etc/grafana/grafana.ini
+              name: config
+              subPath: grafana.ini
+            - mountPath: /etc/grafana/jwks.json
+              name: config
+              subPath: jwks.json
+            - mountPath: /var/lib/grafana
+              name: storage
+      volumes:
+        - name: storage
+          persistentVolumeClaim:
+            claimName: grafana-pvc
+        - configMap:
+            defaultMode: 420
+            name: grafana
+          name: config
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: grafana-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  # storageClassName: local-path
+  volumeMode: Filesystem
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: grafana
+spec:
+  ports:
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: 3000
+      nodePort: 32010
+  selector:
+    app: grafana
+  type: NodePort
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    app: grafana
+  name: grafana
+data:
+  grafana.ini: |
+    # 子路径如果是/grafana才需要加下面3行
+    [server]
+    root_url = http://127.0.0.1:3000/grafana
+    serve_from_sub_path = true
+    [analytics]
+    check_for_updates = true
+    [grafana_net]
+    url = https://grafana.net
+    [log]
+    mode = console
+    [paths]
+    data = /var/lib/grafana/data
+    logs = /var/log/grafana
+    plugins = /var/lib/grafana/plugins
+    provisioning = /etc/grafana/provisioning
+    [auth.jwt]
+    # 启用jwt认证
+    enabled = true
+    # 启用通过url带token认证
+    url_login = true
+    # 如果用户不存在自动创建用户
+    # auto_sign_up = true
+    # grafana的username与jwt的claim中xxx字段对应
+    username_claim = username
+    # grafana的email与jwt的claim中xxx字段对应
+    email_claim = email
+    # 验证jwt的jwks文件
+    jwk_set_file = /etc/grafana/jwks.json
+    # 允许token登录
+    enable_login_token = true
+    # header哪个参数标志为token
+    header_name = X-Forwarded-Access-Token
+    cache_ttl = 60m
+    [security]
+    # 允许iframe嵌入
+    allow_embedding = true
+    [alerting]
+    enabled = false
+    # 禁用grafana的告警功能
+    [unified_alerting]
+    enabled = false
+    [users]
+    # 主题默认黑色，light-白色
+    default_theme = light
+  jwks.json: |
+    {"keys":[{"kty":"RSA","n":"jf4-XiK_Cwa7KWY8gnpTKbtNKWVc8Ai5SQ2fBCOxvnJf6XflllNGxHgLHa_w049EJ20Ydhp6snskUgmtU2U8zw","e":"AQAB"}]}
