@@ -18,6 +18,8 @@
       <module>http-demo</module>
       <module>log-demo</module>
     <module>spring-framework-demo</module>
+      <module>spring-security-demo</module>
+      <module>java-logic</module>
   </modules>
 
   <name>all-demo</name>

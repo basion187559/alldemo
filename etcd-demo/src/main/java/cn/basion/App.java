@@ -20,8 +20,8 @@ public class App
 {
     public static void main( String[] args ) throws ExecutionException, InterruptedException {
         Charset utf8 = Charset.forName("utf-8");
-        String sourceUrl ="http://10.201.0.69:37716";
-        String targetUrl ="http://10.201.0.69:33534";
+        String sourceUrl ="http://10.201.0.69:33823";
+      //  String targetUrl ="http://10.201.0.69:33534";
         KV sourceClient = Client.builder().endpoints(sourceUrl).build().getKVClient();
         ByteSequence key = ByteSequence.from("\0", utf8);
         GetOption option = GetOption.newBuilder()
@@ -32,13 +32,13 @@ public class App
         CompletableFuture<GetResponse> futureResponse = sourceClient.get(key, option);
         GetResponse response = futureResponse.get();
 
-        KV targetClient = Client.builder().endpoints(targetUrl).build().getKVClient();
+       // KV targetClient = Client.builder().endpoints(targetUrl).build().getKVClient();
         for (KeyValue kv : response.getKvs()) {
             System.out.println(kv.getKey().toString(utf8)+":"+kv.getValue().toString(utf8));
-            targetClient.put(kv.getKey(), kv.getValue());
-            sourceClient.delete(kv.getKey());
+        //    targetClient.put(kv.getKey(), kv.getValue());
+        //    sourceClient.delete(kv.getKey());
         }
-        targetClient.close();
+      //  targetClient.close();
         sourceClient.close();
     }
 }
